@@ -78,6 +78,7 @@ def main():
     else:
         count=input() # Skips TODO: Fix
         values=input()
+        values = list(map(int, values.split()))
     print(compute_height(values))
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
