@@ -22,7 +22,7 @@ def main():
     entry=input()
     if entry[0]=="F":
         filename=input()
-        file=open(str("/test/"+filename), "r")
+        file=open(str("test/"+filename), "r")
         file.readline() # Skips n (idk what I need it for)
         values = list(map(int, file.readline().split()))
         values = np.array(values)
